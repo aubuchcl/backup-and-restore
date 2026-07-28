@@ -1,0 +1,19 @@
+{
+  "name": "ai4-backup-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pulls mongodump archives from DocumentDB and serves them to sibling containers over the private network.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "restore": "node src/restore-cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0"
+  }
+}
